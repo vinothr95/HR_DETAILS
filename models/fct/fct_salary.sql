@@ -15,7 +15,8 @@ select
     emp.job_id,
     sal.hra,
     sal.ALLOWANCES,
-    sal.pf
+    sal.pf,
+    sal.LOAD_TIME
 from {{ ref('stg_salary')}} as sal 
 left join {{ref('dim_employees')}} as emp 
 on sal.employee_id=emp.employee_id
