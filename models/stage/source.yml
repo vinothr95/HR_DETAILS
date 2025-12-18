@@ -1,0 +1,18 @@
+version: 2
+sources:
+  - name: hr
+    database: source
+    schema: hr
+    description: 'hr related data'
+    tables:
+      - name: src_regions
+        columns:
+          - name: region_id
+            tests:
+              - not_null
+      - name: src_countries
+      - name: src_locations
+      - name: src_departments
+      - name: src_employees
+      - name: src_salary
+      - name: src_jobs
