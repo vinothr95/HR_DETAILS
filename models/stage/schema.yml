@@ -1,0 +1,35 @@
+version: 2
+models:
+  - name: stg_countries
+    columns:
+      - name: country_id
+        tests:
+          - not_null
+          - unique
+  - name: stg_region
+    columns:
+      - name: region_id
+        tests:
+          - not_null
+          - unique
+  - name: stg_locations
+    columns:
+      - name: location_id
+        tests:
+          - not_null
+          - unique
+  - name: stg_departments
+    columns:
+      - name: department_id
+        tests:
+          - not_null
+          - unique
+  - name: stg_employees
+    columns:
+      - name: employee_id
+        tests:
+         - not_null
+         - unique
+  - name: stg_salary
+    columns:
+      - name: employee_id
